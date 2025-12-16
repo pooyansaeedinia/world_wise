@@ -1,13 +1,7 @@
-from django.shortcuts import render
-from rest_framework.generics import ListAPIView
+from rest_framework import viewsets
+from .models import Comments
+from .serializers import CommentsSerializer
 
-from my_app.models import Comments
-from my_app.serializers import CommentSerializer
-
-
-# Create your views here.
-
-
-class CountriesView(ListAPIView):
+class CommentsViewSet(viewsets.ModelViewSet):
     queryset = Comments.objects.all()
-    serializer_class = CommentSerializer
+    serializer_class = CommentsSerializer

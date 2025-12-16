@@ -10,7 +10,6 @@ class Position(models.Model):
         return self.id
 
 class Comments(models.Model):
-    id = models.IntegerField(primary_key=True)
     cityName = models.CharField(max_length=120)
     country = models.CharField(max_length=120)
     emoji = models.CharField(max_length=120)

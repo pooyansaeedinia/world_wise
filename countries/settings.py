@@ -143,3 +143,5 @@ SPECTACULAR_SETTINGS = {
 CORS_ALLOWED_ORIGINS = [
     "https://world-wise-seven-phi.vercel.app",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
